@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
-const port = 3003;
+const port = 3400;
 const db = require('../db/index.js');
 const Song = require('../db/seed.js');
 
