@@ -3,6 +3,7 @@ const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
 const port = 3400;
+// changed port 
 const db = require('../db/index.js');
 const Song = require('../db/seed.js');
 
