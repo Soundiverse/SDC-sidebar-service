@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shiju-an/sidebar-components-services.git"
+    "url": "git+https://github.com/Soundiverse/SDC-sidebar-service"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shiju-an/sidebar-components-services/issues"
+    "url": "https://github.com/Soundiverse/SDC-sidebar-service/issues"
   },
-  "homepage": "https://github.com/shiju-an/sidebar-components-services#readme",
+  "homepage": "https://github.com/Soundiverse/SDC-sidebar-service#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "babel-loader": "^8.0.6",
