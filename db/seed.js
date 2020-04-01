@@ -91,7 +91,7 @@ const generateUserFiller = function () {
 const generateSongs = function () {
   let songs = [];
 
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 10000; i++) {
     const title = faker.lorem.words();
     const likes = faker.random.number();
     const reposts = faker.random.number();
