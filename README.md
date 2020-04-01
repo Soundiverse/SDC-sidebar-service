@@ -18,8 +18,8 @@ Server: http://localhost:3400
 # API Routes:
 
 #### Initial Request
-Path: GET 
-HTTP Method: /mainSong
+HTTP Method: GET 
+Path: /mainSong
 ```sh
 Response: 
   - Error code 404 
@@ -51,8 +51,8 @@ Example Output
 ```
 
 #### CREATE 
-PATH: POST 
-HTTP Method: /song/:id
+HTTP Method: POST
+PATH: /song/:id
 ```sh
 Response:
   - Error code 400
@@ -60,8 +60,8 @@ Response:
 ```
 
 #### READ
-PATH: GET 
-HTTP Method: /mainSong/:id
+HTTP Method: GET
+PATH: /mainSong/:id
 ```sh
 Response:
   - Error code 404
@@ -82,8 +82,8 @@ Example Output
 ```
 
 #### UPDATE
-PATH: PUT 
-HTTP Method: /mainSong/:id
+HTTP Method: PUT/PATCH
+PATH: /mainSong/:id
 ```sh
 Response: 
   - Error code 404
@@ -91,8 +91,8 @@ Response:
 ```
 
 #### DELETE
-PATH: DELETE 
-HTTP Method: /mainSong/:id/song
+HTTP Method: DELETE
+PATH: /mainSong/:id/song
 ```sh
 Response:
   - Error code 400
