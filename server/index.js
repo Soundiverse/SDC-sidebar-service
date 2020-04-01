@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, '../client/dist')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get('/api/mainSong', (req, res) => {
+app.get('/mainSong', (req, res) => {
   Song
     .find({})
     .count()
@@ -32,5 +32,22 @@ app.get('/api/mainSong', (req, res) => {
         })
     })
 });
+
+// Create / POST - create a new item
+app.post('/relatedSong', function (req, res) {
+  res.send('Got a POST request')
+})
+// Read / GET - read an item
+app.get('/api/mainSong/:id', function (req, res) {
+  res.send('Hello World!')
+})
+// Update / PUT - update an item
+app.put('/api/mainSong/:id/comment', function (req, res) {
+  res.send('Got a PUT request at /user')
+})
+// Delete / DELETE - delete an item
+app.delete('/api/mainSong/:id/comment', function (req, res) {
+  res.send('Got a DELETE request at /user')
+})
 
 app.listen(port, () => console.log(`DO YOU COME IN @ ${port}`));
