@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const dockerDB = '172.17.0.3'; //replace localhost with when deploying
+const dockerDB = '172.17.0.3'; //replace mongo with when deploying
 mongoose.connect('mongodb://localhost:27017/sidebarcomponent', {useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
