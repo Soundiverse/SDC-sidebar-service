@@ -19,7 +19,9 @@ Server: http://localhost:3400
 
 #### Initial Request
 HTTP Method: GET 
-Path: /mainSong
+
+Path: /song/:id
+
 ```sh
 Response: 
   - Error code 404 
@@ -52,7 +54,7 @@ Example Output
 
 #### CREATE 
 HTTP Method: POST
-PATH: /song/:id
+PATH: /song
 ```sh
 Response:
   - Error code 400
@@ -61,7 +63,7 @@ Response:
 
 #### READ
 HTTP Method: GET
-PATH: /mainSong/:id
+PATH: /song/:id
 ```sh
 Response:
   - Error code 404
@@ -83,7 +85,7 @@ Example Output
 
 #### UPDATE
 HTTP Method: PUT/PATCH
-PATH: /mainSong/:id
+PATH: /song/:id
 ```sh
 Response: 
   - Error code 404
@@ -92,7 +94,7 @@ Response:
 
 #### DELETE
 HTTP Method: DELETE
-PATH: /mainSong/:id/song
+PATH: /song/:id
 ```sh
 Response:
   - Error code 400
