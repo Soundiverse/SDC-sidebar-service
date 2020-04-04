@@ -14,7 +14,6 @@ Server: http://localhost:3400
   - npm run server-dev
   ```
 
-
 # API Routes:
 
 #### Initial Request

@@ -8,11 +8,11 @@ const genres = [ 'spanish', 'country', 'pop', 'hip-hop', 'r&b', 'latin', 'rap', 
 const relatedSongsGenerator = () => {
   let random = Math.floor((Math.random() * 100) / 12);
   writer.pipe(fs.createWriteStream('db/cassandra/writeSongs.csv'));
-  for (var i = 0; i < 4000000; i++) {
+  for (var i = 0; i < 6000000; i++) {
     writer.write({
       id: i,
       title: `"${faker.lorem.words()}"`,
-      artist: `"${faker.name.firstName()}"`,
+      artist:  `"${faker.name.firstName()}"`,
       location: `"${faker.address.city()}"`,
       followers: faker.random.number(),
       likes: faker.random.number(),
@@ -20,15 +20,16 @@ const relatedSongsGenerator = () => {
       plays: faker.random.number(),
       comments: faker.random.number(),
       genre: genres[random],
-      artistImage: `"${faker.image.avatar()}"`,
-      songImage: `"${faker.image.image()}"`,
-      userReposts: faker.random.number()
+      artist_image: `"${faker.image.avatar()}"`,
+      song_image: faker.image.image(),
+      user_reposts: faker.random.number()
     })
-    if (i === 1000000) {
-      console.log('first million related songs completed');
+    if (i === 3000000) {
+      console.log('halfway through related songs!');
       continue;
     }
   }
+
   // writer.end();
   console.log('done with related songs')
 }
@@ -38,22 +39,22 @@ relatedSongsGenerator();
 const relatedPlaylistsGenerator = function () {
   writer.pipe(fs.createWriteStream('db/cassandra/writePlaylists.csv'));
   let random = Math.floor((Math.random() * 100) / 12);
-  for (let i = 0; i < 3000000; i++) {
+  for (let i = 0; i < 4000000; i++) {
     writer.write({
       id: i,
       name: `"${faker.lorem.words()}"`,
       songs: `"${faker.lorem.words()}"`,
       likes: faker.random.number(),
       reposts: faker.random.number(),
-      creator: `"${faker.name.firstName()}"`,
+      creator:  `"${faker.name.firstName()}"`,
       genre: genres[random],
-      location: faker.random.number(),
+      location: `"${faker.address.city()}"`,
       followers: faker.random.number(),
-      playlist_image: `"${faker.image.image()}"`,
+      playlist_image: faker.image.image(),
       user_image: `"${faker.image.avatar()}"`
     });
-    if (i === 1000000) {
-      console.log('first million related playlists completed');
+    if (i === 2000000) {
+      console.log('halfway through related playlists!');
       continue;
     }
   }
@@ -74,13 +75,13 @@ const genreGenerator = function () {
       followers: faker.random.number(),
       likes: faker.random.number(),
     })
-    if (i === 1000000) {
-      console.log('first million genres completed');
+    if (i === 100000) {
+      console.log('genres completed');
       continue;
     }
   }
   writer.end();
-  console.log('done with genres');
+  console.log('done');
 };
 
 genreGenerator();

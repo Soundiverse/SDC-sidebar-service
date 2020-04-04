@@ -21,16 +21,16 @@ const generateRelatedSongs = function () {
     const songImage = faker.image.image();
 
     let relatedSong = {
-      song_name: songName,
-      artist_name: artistName,
-      artist_location: artistLocation,
-      artist_followers: artistFollowers,
-      song_likes: songLikes,
-      song_reposts: songReposts,
-      song_plays: songPlays,
-      song_comments: songComments,
-      artist_image_url: artistImage,
-      song_image_url: songImage
+      song: songName,
+      artist: artistName,
+      location: artistLocation,
+      followers: artistFollowers,
+      ikes: songLikes,
+      reposts: songReposts,
+      plays: songPlays,
+      comments: songComments,
+      artist_image: artistImage,
+      song_image: songImage
     };
 
     relatedSongs.push(relatedSong);
@@ -52,14 +52,14 @@ const generateRelatedPlaylists = function () {
     const userImage = faker.image.avatar();
 
     let relatedPlaylist = {
-      playlist_name: playlistName,
-      playlist_likes: playlistLikes,
-      playlist_reposts: playlistReposts,
-      user_name: userName,
-      user_location: userLocation,
-      user_followers: userFollowers,
-      playlist_image_url: playlistImage,
-      user_image_url: userImage
+      name: playlistName,
+      likes: playlistLikes,
+      reposts: playlistReposts,
+      user: userName,
+      location: userLocation,
+      followers: userFollowers,
+      playlist_image: playlistImage,
+      user_image: userImage
     };
 
     relatedPlaylists.push(relatedPlaylist);
@@ -77,10 +77,10 @@ const generateUserFiller = function () {
     const userImage = faker.image.avatar();
 
     let userFiller = {
-      user_name: userName,
-      user_location: userLocation,
-      user_followers: userFollowers,
-      user_image_url: userImage
+      name: userName,
+      location: userLocation,
+      followers: userFollowers,
+      user_image: userImage
     };
 
     userFillers.push(userFiller);
