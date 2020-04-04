@@ -1,10 +1,6 @@
-DROP DATABASE if exists Sidebar;
+CREATE SCHEMA Sidebar;
 
-CREATE DATABASE Sidebar;
-
-USE Sidebar;
-
-CREATE TABLE tracks (
+CREATE TABLE Sidebar.tracks (
   _id SERIAL PRIMARY KEY,
   title varchar,
   artist varchar,
@@ -21,7 +17,7 @@ CREATE TABLE tracks (
   recent_user_reposts int
 );
 
-CREATE TABLE playlists (
+CREATE TABLE Sidebar.playlists (
   _id int PRIMARY KEY,
   name varchar,
   tracks REFERENCES,
@@ -35,7 +31,7 @@ CREATE TABLE playlists (
   user_image varchar
 );
 
-CREATE TABLE genres (
+CREATE TABLE Sidebar.genres (
   _id int,
   type varchar,
   followers int,

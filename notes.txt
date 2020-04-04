@@ -11,5 +11,6 @@ COPY Sidebar.songs (id, title, artist, location, followers, likes, reposts, play
 playlists:
 COPY Sidebar.playlists (id, name, songs, likes, reposts, creator, genre, location, followers, playlist_image, user_image) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/cassandra/writePlaylists.csv' with header=true and delimiter=',';
 genres:
-COPY Sidebar.playlists (id, type, followers, likes) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/cassandra/writeGenres.csv' with header=true and delimiter=',';
+COPY Sidebar.playlists (id, type, songs, followers, likes) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/cassandra/writeGenres.csv' with header=true and delimiter=',';
 
+for postgresql schema

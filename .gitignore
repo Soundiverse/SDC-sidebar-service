@@ -1,4 +1,6 @@
 node_modules
 AWSCLIV2.pkg
 
-.csv
+db/cassandra/writeGenres.csv
+db/cassandra/writePlaylists.csv
+db/cassandra/writeSongs.csv

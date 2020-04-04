@@ -33,7 +33,8 @@ CREATE TABLE Sidebar.playlists (
 CREATE TABLE Sidebar.genres (
   id int,
   type varchar,
+  songs varchar,
   followers int,
   likes int,
-  PRIMARY KEY (id, type, likes, followers) );
+  PRIMARY KEY (id, type) );
 
