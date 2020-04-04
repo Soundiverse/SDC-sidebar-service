@@ -1,4 +1,3 @@
-// const { relatedSongSchema, relatedPlaylistSchema, userFiller, songSchema } = require('./schema.js');
 const faker = require('faker');
 const csvWriter = require('csv-write-stream');
 const writer = csvWriter();
@@ -19,7 +18,7 @@ const relatedSongsGenerator = () => {
       reposts: faker.random.number(),
       plays: faker.random.number(),
       comments: faker.random.number(),
-      genre: genres[random],
+      genre: `'${genres[random]}'`,
       artist_image: `'${faker.image.avatar()}'`,
       song_image: `'${faker.image.image()}'`,
       user_reposts: faker.random.number()
@@ -47,7 +46,7 @@ const relatedPlaylistsGenerator = function () {
       likes: faker.random.number(),
       reposts: faker.random.number(),
       creator:  `'${faker.name.firstName()}'`,
-      genre: genres[random],
+      genre: `'${genres[random]}'`,
       location: `'${faker.address.city()}'`,
       followers: faker.random.number(),
       playlist_image: `'${faker.image.image()}'`,
@@ -67,11 +66,11 @@ relatedPlaylistsGenerator();
 
 const genreGenerator = function () {
   writer.pipe(fs.createWriteStream('db/cassandra/writeGenres.csv'));
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 1000000; i++) {
     let random = Math.floor((Math.random() * 100) / 12);
     writer.write({
       id: i,
-      type: genres[random],
+      type: `'${genres[random]}'`,
       songs: `'${faker.lorem.words()}'`,
       followers: faker.random.number(),
       likes: faker.random.number(),

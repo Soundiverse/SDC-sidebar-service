@@ -3,7 +3,6 @@ const faker = require('faker');
 const csvWriter = require('csv-write-stream');
 const writer = csvWriter();
 const fs = require('fs');
-let counter = 0;
 
 const dataGenerator = () => {
   writer.pipe(fs.createWriteStream('write.csv'));
