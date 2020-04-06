@@ -5,7 +5,7 @@ const fs = require('fs');
 const genres = [ 'spanish', 'country', 'pop', 'hip-hop', 'r&b', 'latin', 'rap', 'classical', 'alternative', 'rock', 'punk', 'heavy metal']
 
 const songDataGenerator = () => {
-  writer.pipe(fs.createWriteStream('db/postgres/writeSongs.csv'));
+  writer.pipe(fs.createWriteStream('db/postgres/writeSongsOpt.csv'));
   for (var i = 0; i < 10000000; i++) {
     let random = Math.floor((Math.random() * 100) / 12);
     writer.write({
@@ -13,41 +13,42 @@ const songDataGenerator = () => {
       title: `'${faker.commerce.productName()}'`,
       artist:  `'${faker.name.findName()}'`,
       location: `'${faker.address.city()}'`,
-      followers: faker.random.number(),
-      likes: faker.random.number(),
-      reposts: faker.random.number(),
-      plays: faker.random.number(),
-      comments: faker.random.number(),
-      genre: `'${genres[random]}'`,
+      followers: faker.random.number({min:5, max:10000000}),
+      likes: faker.random.number({min:5, max:10000000}),
+      reposts: faker.random.number({min:5, max:10000000}),
+      plays: faker.random.number({min:5, max:10000000}),
+      comments: faker.random.number({min:5, max:10000000}),
+      genre: random,
       artist_image: `'${faker.image.avatar()}'`,
       song_image: `'${faker.image.image()}'`,
-      user_reposts: faker.random.number()
+      user_reposts: faker.random.number({min:5, max:10000000})
     })
     if (i === 1000000) {
       console.log('first million completed');
       continue;
     }
   }
-  // writer.end();
+  writer.end();
   console.log('done with songs')
 }
 
 songDataGenerator();
 
 const relatedPlaylistsGenerator = function () {
-  writer.pipe(fs.createWriteStream('db/postgres/writePlaylists.csv'));
-  for (let i = 0; i < 4000000; i++) {
+  writer.pipe(fs.createWriteStream('db/postgres/writePlaylistsOpt.csv'));
+  for (let i = 0; i < 40000; i++) {
     let random = Math.floor((Math.random() * 100) / 12);
+    // let fakerArray = [faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000})];
     writer.write({
       id: i,
       name: `'${faker.name.findName()}'`,
-      tracks: `'${faker.commerce.productName()}'`,
-      likes: faker.random.number(),
-      reposts: faker.random.number(),
+      tracks: faker.random.number({min:5, max:10000}),
+      likes: faker.random.number({min:5, max:10000}),
+      reposts: faker.random.number({min:5, max:10000}),
       creator:  `'${faker.name.findName()}'`,
-      genre: `'${genres[random]}'`,
+      genre: random,
       location: `'${faker.address.city()}'`,
-      followers: faker.random.number(),
+      followers: faker.random.number({min:5, max:10000}),
       playlist_image: `'${faker.image.image()}'`,
       user_image: `'${faker.image.avatar()}'`
     });
@@ -56,7 +57,7 @@ const relatedPlaylistsGenerator = function () {
       continue;
     }
   }
-  // writer.end();
+  writer.end();
   console.log('done with related playlists');
 };
 
@@ -64,15 +65,16 @@ relatedPlaylistsGenerator();
 
 
 const genreGenerator = function () {
-  writer.pipe(fs.createWriteStream('db/postgres/writeGenres.csv'));
-  for (let i = 0; i < 1000000; i++) {
-    let random = Math.floor((Math.random() * 100) / 12);
+  writer.pipe(fs.createWriteStream('db/postgres/writeGenresOpt.csv'));
+  for (let i = 0; i < 100000; i++) {
+    // let random = Math.floor((Math.random() * 100) / 12);
+    // let fakerArray = [faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000})];
     writer.write({
       id: i,
-      type: `'${genres[random]}'`,
-      songs: `'${faker.commerce.productName()}'`,
-      followers: faker.random.number(),
-      likes: faker.random.number(),
+      type: faker.commerce.color(),
+      songs: faker.random.number({min:5, max:10000000}),
+      followers: faker.random.number({min:5, max:10000000}),
+      likes: faker.random.number({min:5, max:10000000}),
     })
     if (i === 100000) {
       console.log('genres completed');

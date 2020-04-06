@@ -1,8 +1,8 @@
 DROP DATABASE IF EXISTS;
 
-CREATE DATABASE Sidebar;
+CREATE DATABASE SidebarOpt;
 
-USE Sidebar;
+\c SidebarOpt;
 
 CREATE TABLE tracks (
   id int,
@@ -14,7 +14,7 @@ CREATE TABLE tracks (
   reposts int,
   plays int,
   comments int,
-  genre varchar,
+  genre int,
   artist_image varchar,
   song_image varchar,
   user_reposts int,
@@ -24,11 +24,11 @@ CREATE TABLE tracks (
 CREATE TABLE playlists (
   id int,
   name varchar,
-  tracks varchar,
+  tracks int,
   likes int,
   reposts int,
   creator varchar,
-  genre varchar,
+  genre int,
   location varchar,
   followers int,
   playlist_image varchar,
@@ -39,20 +39,17 @@ CREATE TABLE playlists (
 CREATE TABLE genres (
   id int,
   type varchar,
-  songs varchar,
+  songs int,
   followers int,
   likes int,
   PRIMARY KEY (id)
 );
 
-ALTER TABLE tracks ADD FOREIGN KEY (genre) REFERENCES genres (id, type);
-ALTER TABLE playlists ADD FOREIGN KEY (genre) REFERENCES genres (type);
-ALTER TABLE playlists ADD FOREIGN KEY (tracks) REFERENCES tracks (title);
-ALTER TABLE genres ADD FOREIGN KEY (songs) REFERENCES tracks (title);
+\COPY tracks (id,title,artist,location,followers,likes,reposts,plays,comments,genre,artist_image,song_image,user_reposts) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/postgres/writeSongsOpt.csv' DELIMITER ',' CSV HEADER;
+\COPY playlists (id,name,tracks,likes,reposts,creator,genre,location,followers,playlist_image,user_image) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/postgres/writePlaylistsOpt.csv' DELIMITER ',' CSV HEADER;
+\COPY genres (id,type,songs,followers,likes) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/postgres/writeGenresOpt.csv' DELIMITER ',' CSV HEADER;
 
--- tracks FULL JOIN genres USING ( songs );
--- genres FULL JOIN tracks USING ( genres );
-\COPY tracks (id,title,artist,location,followers,likes,reposts,plays,comments,genre,artist_image,song_image,user_reposts) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/postgres/writeSongs.csv' DELIMITER ',' CSV HEADER;
-\COPY playlists (id,name,tracks,likes,reposts,creator,genre,location,followers,playlist_image,user_image) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/postgres/writePlaylists.csv' DELIMITER ',' CSV HEADER;
-\COPY genres (id,type,songs,followers,likes) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/postgres/writeGenres.csv' DELIMITER ',' CSV HEADER;
--- (id, title, artist, location, followers, likes, reposts, plays, comments, genre, artist_image, song_image, recent_user_reposts)
+ALTER TABLE tracks ADD FOREIGN KEY (genre) REFERENCES genres (id);
+ALTER TABLE playlists ADD FOREIGN KEY (genre) REFERENCES genres (id);
+ALTER TABLE playlists ADD FOREIGN KEY (tracks) REFERENCES tracks (id);
+ALTER TABLE genres ADD FOREIGN KEY (songs) REFERENCES tracks (id);
