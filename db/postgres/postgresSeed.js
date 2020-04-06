@@ -1,128 +1,86 @@
-// const { relatedSongSchema, relatedPlaylistSchema, userFiller, songSchema } = require('./schema.js');
 const faker = require('faker');
 const csvWriter = require('csv-write-stream');
 const writer = csvWriter();
 const fs = require('fs');
+const genres = [ 'spanish', 'country', 'pop', 'hip-hop', 'r&b', 'latin', 'rap', 'classical', 'alternative', 'rock', 'punk', 'heavy metal']
 
-const dataGenerator = () => {
-  writer.pipe(fs.createWriteStream('write.csv'));
+const songDataGenerator = () => {
+  writer.pipe(fs.createWriteStream('db/postgres/writeSongs.csv'));
   for (var i = 0; i < 10000000; i++) {
-    counter++;
+    let random = Math.floor((Math.random() * 100) / 12);
     writer.write({
-      title: faker.lorem.words(),
-      artist: faker.name.firstName(),
-      location: faker.address.city(),
+      id: i,
+      title: `'${faker.commerce.productName()}'`,
+      artist:  `'${faker.name.findName()}'`,
+      location: `'${faker.address.city()}'`,
       followers: faker.random.number(),
       likes: faker.random.number(),
       reposts: faker.random.number(),
       plays: faker.random.number(),
       comments: faker.random.number(),
-      genre: faker.hacker.adjective(),
-      artistImage: faker.image.avatar(),
-      songImage: faker.image.image(),
-      userReposts: faker.random.number(),
+      genre: `'${genres[random]}'`,
+      artist_image: `'${faker.image.avatar()}'`,
+      song_image: `'${faker.image.image()}'`,
+      user_reposts: faker.random.number()
     })
-    if (counter = 1000000) {
+    if (i === 1000000) {
       console.log('first million completed');
       continue;
     }
   }
-  writer.end();
-  console.log('done')
+  // writer.end();
+  console.log('done with songs')
 }
 
-dataGenerator();
+songDataGenerator();
 
-// const generateRelatedSongs = function () {
-//   let relatedSongs = [];
-
-//   for (let i = 0; i < 10000; i++) {
-//     const title = faker.lorem.words();
-//     const artist = faker.name.firstName();
-//     const location = faker.address.city();
-//     const followers = faker.random.number();
-//     const likes = faker.random.number();
-//     const reposts = faker.random.number();
-//     const plays = faker.random.number();
-//     const comments = faker.random.number();
-//     const genre = faker.hacker.adjective();
-//     const artistImage = faker.image.avatar();
-//     const songImage = faker.image.image();
-//     const userReposts = faker.random.number();
-
-//     let relatedSong = {
-//       song: songName,
-//       artist: artistName,
-//       location: artistLocation,
-//       followers: artistFollowers,
-//       ikes: songLikes,
-//       reposts: songReposts,
-//       plays: songPlays,
-//       comments: songComments,
-//       artist_image: artistImage,
-//       song_image: songImage
-//     };
-
-//     relatedSongs.push(relatedSong);
-//   }
-//   return relatedSongs;
-// };
-
-const generateRelatedPlaylists = function () {
-  let relatedPlaylists = [];
-
-  for (let i = 0; i < 1000; i++) {
-    const playlistName = faker.lorem.words();
-    const playlistLikes = faker.random.number();
-    const playlistReposts = faker.random.number();
-    const userName = faker.name.firstName();
-    const userLocation = faker.address.city();
-    const userFollowers = faker.random.number();
-    const playlistImage = faker.image.image();
-    const userImage = faker.image.avatar();
-
-    let relatedPlaylist = {
-      name: playlistName,
-      likes: playlistLikes,
-      reposts: playlistReposts,
-      user: userName,
-      location: userLocation,
-      followers: userFollowers,
-      playlist_image: playlistImage,
-      user_image: userImage
-    };
-
-    relatedPlaylists.push(relatedPlaylist);
+const relatedPlaylistsGenerator = function () {
+  writer.pipe(fs.createWriteStream('db/postgres/writePlaylists.csv'));
+  for (let i = 0; i < 4000000; i++) {
+    let random = Math.floor((Math.random() * 100) / 12);
+    writer.write({
+      id: i,
+      name: `'${faker.name.findName()}'`,
+      tracks: `'${faker.commerce.productName()}'`,
+      likes: faker.random.number(),
+      reposts: faker.random.number(),
+      creator:  `'${faker.name.findName()}'`,
+      genre: `'${genres[random]}'`,
+      location: `'${faker.address.city()}'`,
+      followers: faker.random.number(),
+      playlist_image: `'${faker.image.image()}'`,
+      user_image: `'${faker.image.avatar()}'`
+    });
+    if (i === 2000000) {
+      console.log('halfway through related playlists!');
+      continue;
+    }
   }
-  return relatedPlaylists;
+  // writer.end();
+  console.log('done with related playlists');
 };
 
-// const generateUserFiller = function () {
-//   let userFillers = [];
+relatedPlaylistsGenerator();
 
 
-const generateSongs = function () {
-  let genres = [];
-
-  for (let i = 0; i < 10000; i++) {
-    const title = faker.lorem.words();
-    const likes = faker.random.number();
-    const follows = faker.random.number();
-
-    let genre = new Genre({
-      type: title,
-      likes: likes,
-      followers: follows,
-    //   recent_user_likes: generateUserFiller(),
-    //   recent_user_reposts: generateUserFiller(),
-    //   related_songs: generateRelatedSongs(),
-    //   related_playlists: generateRelatedPlaylists()
+const genreGenerator = function () {
+  writer.pipe(fs.createWriteStream('db/postgres/writeGenres.csv'));
+  for (let i = 0; i < 1000000; i++) {
+    let random = Math.floor((Math.random() * 100) / 12);
+    writer.write({
+      id: i,
+      type: `'${genres[random]}'`,
+      songs: `'${faker.commerce.productName()}'`,
+      followers: faker.random.number(),
+      likes: faker.random.number(),
     })
-    genres.push(genre);
+    if (i === 100000) {
+      console.log('genres completed');
+      continue;
+    }
   }
-  return songs;
+  writer.end();
+  console.log('done with genres');
 };
 
-// Song.collection.insertMany(generateSongs());
-
-module.exports = Song; 
+genreGenerator();
