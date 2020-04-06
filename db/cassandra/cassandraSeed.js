@@ -3,14 +3,28 @@ const csvWriter = require('csv-write-stream');
 const writer = csvWriter();
 const fs = require('fs');
 const genres = [ 'spanish', 'country', 'pop', 'hip-hop', 'r&b', 'latin', 'rap', 'classical', 'alternative', 'rock', 'punk', 'heavy metal']
+const tracks = require('./song.js');
+
+// const relatedSongsGenerator = () => {
+//   writer.pipe(fs.createWriteStream('db/cassandra/song.csv'));
+//   for (var i = 0; i < 10000; i++) {
+//     writer.write({
+//       track: title,
+//     });
+    
+//   }
+//   writer.end();
+//   console.log('done with related songs')
+// }
 
 const relatedSongsGenerator = () => {
-  writer.pipe(fs.createWriteStream('db/cassandra/writeSongs.csv'));
-  for (var i = 0; i < 10000000; i++) {
+  writer.pipe(fs.createWriteStream('db/cassandra/writeSongsOpt.csv'));
+  for (var i = 0; i < 100; i++) {
     let random = Math.floor((Math.random() * 100) / 12);
+    let title = `'${faker.commerce.productName()}'`;
     writer.write({
       id: i,
-      title: `'${faker.commerce.productName()}'`,
+      title: title,
       artist:  `'${faker.name.findName()}'`,
       location: `'${faker.address.city()}'`,
       followers: faker.random.number(),
@@ -23,26 +37,29 @@ const relatedSongsGenerator = () => {
       song_image: `'${faker.image.image()}'`,
       user_reposts: faker.random.number()
     })
+    songs.push(title);
     if (i === 3000000) {
       console.log('halfway through related songs!');
       continue;
     }
+    songs.push(title);
   }
+  console.log(songs);
 
-  writer.end();
+  // writer.end();
   console.log('done with related songs')
 }
 
 relatedSongsGenerator();
 
 const relatedPlaylistsGenerator = function () {
-  writer.pipe(fs.createWriteStream('db/cassandra/writePlaylists.csv'));
-  for (let i = 0; i < 4000000; i++) {
+  writer.pipe(fs.createWriteStream('db/cassandra/writePlaylistsOpt.csv'));
+  for (let i = 0; i < 100; i++) {
     let random = Math.floor((Math.random() * 100) / 12);
     writer.write({
       id: i,
       name: `'${faker.name.findName()}'`,
-      songs: `'${faker.commerce.productName()}'`,
+      tracks: [tracks.slice(random, random * 2)],
       likes: faker.random.number(),
       reposts: faker.random.number(),
       creator:  `'${faker.name.findName()}'`,

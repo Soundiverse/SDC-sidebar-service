@@ -1,6 +1,6 @@
-CREATE KEYSPACE Sidebar WITH REPLICATION = { 'class': 'SimpleStrategy', 'replication_factor': 1};
+CREATE KEYSPACE SidebarOpt WITH REPLICATION = { 'class': 'SimpleStrategy', 'replication_factor': 1};
 
-CREATE TABLE Sidebar.songs (
+CREATE TABLE SidebarOpt.songs (
   id int,
   title varchar,
   artist varchar,
@@ -14,12 +14,12 @@ CREATE TABLE Sidebar.songs (
   artist_image varchar,
   song_image varchar,
   user_reposts int,
-  PRIMARY KEY (id, genre, artist) );
+  PRIMARY KEY (genre, artist) );
 
-CREATE TABLE Sidebar.playlists (
+CREATE TABLE SidebarOpt.playlists (
   id int,
   name varchar,
-  songs varchar,
+  songs set<text>,
   likes int,
   reposts int,
   creator varchar,
@@ -28,7 +28,7 @@ CREATE TABLE Sidebar.playlists (
   followers int,
   playlist_image varchar,
   user_image varchar,
-  PRIMARY KEY (id, genre, creator) );
+  PRIMARY KEY (genre, creator) );
 
 
 -- for cassandra copying from csv 
@@ -36,6 +36,6 @@ CREATE TABLE Sidebar.playlists (
 -- songs:
 COPY Sidebar.songs (id, title, artist, location, followers, likes, reposts, plays, comments, genre, artist_image, song_image, user_reposts) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/cassandra/writeSongs.csv' with header=true and delimiter=',';
 -- playlists:
-COPY Sidebar.playlists (id, name, songs, likes, reposts, creator, genre, location, followers, playlist_image, user_image) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/cassandra/writePlaylists.csv' with header=true and delimiter=',';
+COPY Sidebar.playlists (id, name, songs, likes, reposts, creator, genre, location, followers, playlist_image, user_image) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/cassandra/writePlaylistsOpt.csv' with header=true and delimiter=',';
 -- genres:
 -- COPY Sidebar.playlists (id, type, songs, followers, likes) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/cassandra/writeGenres.csv' with header=true and delimiter=',';
