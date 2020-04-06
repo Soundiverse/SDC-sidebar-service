@@ -1,4 +1,4 @@
-CREATE KEYSPACE Sidebar WITH REPLICATION = { 'class': 'SimpleStrategy', 'replication_factor': 3};
+CREATE KEYSPACE Sidebar WITH REPLICATION = { 'class': 'SimpleStrategy', 'replication_factor': 1};
 
 CREATE TABLE Sidebar.songs (
   id int,
@@ -14,7 +14,7 @@ CREATE TABLE Sidebar.songs (
   artist_image varchar,
   song_image varchar,
   user_reposts int,
-  PRIMARY KEY (id, title, artist) );
+  PRIMARY KEY (id, genre, artist) );
 
 CREATE TABLE Sidebar.playlists (
   id int,
@@ -28,13 +28,14 @@ CREATE TABLE Sidebar.playlists (
   followers int,
   playlist_image varchar,
   user_image varchar,
-  PRIMARY KEY (id, name, creator) );
+  PRIMARY KEY (id, genre, creator) );
 
-CREATE TABLE Sidebar.genres (
-  id int,
-  type varchar,
-  songs varchar,
-  followers int,
-  likes int,
-  PRIMARY KEY (id, type) );
 
+-- for cassandra copying from csv 
+-- in cqlsh (cassandra query shell)
+-- songs:
+COPY Sidebar.songs (id, title, artist, location, followers, likes, reposts, plays, comments, genre, artist_image, song_image, user_reposts) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/cassandra/writeSongs.csv' with header=true and delimiter=',';
+-- playlists:
+COPY Sidebar.playlists (id, name, songs, likes, reposts, creator, genre, location, followers, playlist_image, user_image) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/cassandra/writePlaylists.csv' with header=true and delimiter=',';
+-- genres:
+-- COPY Sidebar.playlists (id, type, songs, followers, likes) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/cassandra/writeGenres.csv' with header=true and delimiter=',';

@@ -7,9 +7,27 @@ Server: http://localhost:3400
 ``` sh
 - run npm install in root directory
 ```
+
+
+to create Seed files (adjust numbers first if necessary)
+then run:
+
+### FOR CASSANDRA DB:
+``` sh
+npm run seedCassandra
+or node --max-old-space-size=16384 ./db/cassandra/cassandraSeed.js
+```
+
+### FOR POSTGRES
+``` sh
+npm run seedPostgres
+or node --max-old-space-size=16384 ./db/postgres/postgresSeed.js
+```
+* make sure size= above is less than max RAM on your computer
+
+
 - run below scripts in package.json:
 ```sh
-  - npm run seed 
   - npm run react-dev
   - npm run server-dev
   ```
