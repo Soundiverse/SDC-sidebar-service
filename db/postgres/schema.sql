@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS;
 
 CREATE DATABASE SidebarOpt;
 
-\c SidebarOpt;
+USE SidebarOpt;
 
 CREATE TABLE tracks (
   id int,

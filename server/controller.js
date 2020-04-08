@@ -12,7 +12,7 @@ const pool = new Pool({
 
 const getRelatedSongs = (request, callback) => {
     // let random = Math.floor((Math.random() * 100) / 1000000);
-    pool.query('SELECT * FROM tracks where id between 100 and 200', (error, results) => {
+    pool.query('SELECT * FROM tracks where id = 9999999;', (error, results) => {
         if (error) {
           console.log('err getting tracks', error);
         }
@@ -24,7 +24,7 @@ const getRelatedSongs = (request, callback) => {
 const getSongsById = (req, res) => {
     const id = parseInt(request.params.id)
 
-    pool.query('SELECT * FROM users WHERE id = $1', [id], (error, results) => {
+    pool.query('SELECT * FROM users WHERE id = 9999999', [id], (error, results) => {
       if (error) {
         throw error
       }

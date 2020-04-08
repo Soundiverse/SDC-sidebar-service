@@ -1,3 +1,5 @@
+const newrelic = require('newrelic');
+
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -18,21 +20,20 @@ controller.getRelatedSongs(res.body, (err, response) => {
   if (err) {
     res.send(err);
   }
-  // console.log(res.json(data))
   res.send(response);
 });
 });
 
 // Create / POST - create a new item
 app.post('/song', function (req, res) {
-  res.send('Got a POST request')
+  res.send('Got a POST request');
 })
 // Read / GET - read an item
 app.get('/song/:id', function (req, res) {
   res.send('Hello World!')
 })
 // Update / PUT - update an item
-app.put('/song', function (req, res) {
+app.put('/song/:id', function (req, res) {
   res.send('Got a PUT request at /user')
 })
 // Delete / DELETE - delete an item

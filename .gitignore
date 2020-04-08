@@ -6,3 +6,9 @@ AWSCLIV2.pkg
 db/cassandra/writeSongs.csv
 db/cassandra/writeGenres.csv
 db/cassandra/writePlaylists.csv
+
+# ignore db password
+config.js
+
+# license key and setup for new relic
+newrelic.js

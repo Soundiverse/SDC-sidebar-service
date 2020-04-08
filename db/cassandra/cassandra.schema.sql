@@ -34,7 +34,7 @@ CREATE TABLE SidebarOpt.playlists (
 -- for cassandra copying from csv 
 -- in cqlsh (cassandra query shell)
 -- songs:
-COPY Sidebar.songs (id, title, artist, location, followers, likes, reposts, plays, comments, genre, artist_image, song_image, user_reposts) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/cassandra/writeSongs.csv' with header=true and delimiter=',';
+COPY Sidebar.songs (id, title, artist, location, followers, likes, reposts, plays, comments, genre, artist_image, song_image, user_reposts) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/postgres/writeSongsOpt.csv' with header=true and delimiter=',';
 -- playlists:
 COPY Sidebar.playlists (id, name, songs, likes, reposts, creator, genre, location, followers, playlist_image, user_image) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/cassandra/writePlaylistsOpt.csv' with header=true and delimiter=',';
 -- genres:

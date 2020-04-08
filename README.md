@@ -26,7 +26,7 @@ or node --max-old-space-size=16384 ./db/postgres/postgresSeed.js
 * make sure size= above is less than max RAM on your computer
 
 
-- run below scripts in package.json:
+- run below scripts in package.json to start server and generate bundle file:
 ```sh
   - npm run react-dev
   - npm run server-dev
@@ -47,25 +47,21 @@ Response:
 Example Output 
 ```sh
 [
-  { 
-  "playlist_name" : "aut voluptas commodi", 
-  "playlist_likes" : 31880, 
-  "playlist_reposts" : 23221, 
-  "user_name" : "Alvera", 
-  "user_location" : "Shayneburgh", 
-  "user_followers" : 83019, 
-  "playlist_image_url" : "http://lorempixel.com/640/480/abstract", 
-  "user_image_url" : "https://s3.amazonaws.com/uifaces/faces/twitter/bighanddesign/128.jpg" 
-  },
-  "playlist_name" : "aut voluptas commodi", 
-  "playlist_likes" : 31880, 
-  "playlist_reposts" : 23221, 
-  "user_name" : "Alvera", 
-  "user_location" : "Shayneburgh", 
-  "user_followers" : 83019, 
-  "playlist_image_url" : "http://lorempixel.com/640/480/abstract", 
-  "user_image_url" : "https://s3.amazonaws.com/uifaces/faces/twitter/bighanddesign/128.jpg" 
-  }
+  {
+        "id": 100,
+        "title": "'Tasty Metal Ball'",
+        "artist": "'Ms. Leonel Durgan'",
+        "location": "'Ziemeborough'",
+        "followers": 9037421,
+        "likes": 4485367,
+        "reposts": 9736897,
+        "plays": 8594533,
+        "comments": 8022415,
+        "genre": 2,
+        "artist_image": "'https://s3.amazonaws.com/uifaces/faces/twitter/ciaranr/128.jpg'",
+        "song_image": "'http://lorempixel.com/640/480/cats'",
+        "user_reposts": 933964
+    }
 ]
 ```
 
@@ -75,7 +71,38 @@ PATH: /song
 ```sh
 Response:
   - Error code 400
-  - Successful code 200 OK adds object/song to library
+  - Successful code 201 (created) OK adds object/song to library
+```
+EXAMPLE INPUT:
+```sh
+[
+  {
+    "title": "FUN MEXICAN DANCE",
+    "artist": "Ms. Margarita",
+    "location": "Brazil",
+    "genre": 4,
+    "artist_image": "'https://s3.amazonaws.com/uifaces/faces/twitter/ciaranr/128.jpg'",
+    "song_image": "'http://lorempixel.com/640/480/maracas'",
+  }
+]
+```
+#### CREATE 
+HTTP Method: PUT
+PATH: /song/:id
+```sh
+Response:
+  - Error code 400
+  - Successful code 201 (created) OK adds object/song to library
+```
+EXAMPLE INPUT:
+```sh
+[
+  {
+    "id": 104,
+    "likes": 1,
+    "comments": 4,
+  }
+]
 ```
 
 #### READ
@@ -89,14 +116,19 @@ Response:
 Example Output 
 ```sh
 {
-  "playlist_name" : "aut voluptas commodi", 
-  "playlist_likes" : 31880, 
-  "playlist_reposts" : 23221, 
-  "user_name" : "Alvera", 
-  "user_location" : "Shayneburgh", 
-  "user_followers" : 83019, 
-  "playlist_image_url" : "http://lorempixel.com/640/480/abstract", 
-  "user_image_url" : "https://s3.amazonaws.com/uifaces/faces/twitter/bighanddesign/128.jpg" 
+  "id": 103,
+  "title": "'Tasty Frozen Computer'",
+  "artist": "'Paolo Heathcote'",
+  "location": "'Susanaberg'",
+  "followers": 2519188,
+  "likes": 7927215,
+  "reposts": 2269912,
+  "plays": 2739738,
+  "comments": 9874078,
+  "genre": 3,
+  "artist_image": "'https://s3.amazonaws.com/uifaces/faces/twitter/oksanafrewer/128.jpg'",
+  "song_image": "'http://lorempixel.com/640/480/food'",
+  "user_reposts": 3695064
 }
 ```
 

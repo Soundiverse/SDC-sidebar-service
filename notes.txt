@@ -32,3 +32,16 @@ psql -U postgres -d sidebar < schema.sql
 
 
 
+id: 200
+title: "'Gorgeous Wooden Bacon'"
+artist: "'Lexus Hyatt'"
+location: "'Kristopherhaven'"
+followers: 691408
+likes: 2286479
+reposts: 7381908
+plays: 8794646
+comments: 8454308
+genre: 4
+artist_image: "'https://s3.amazonaws.com/uifaces/faces/twitter/ma_tiax/128.jpg'"
+song_image: "'http://lorempixel.com/640/480/technics'"
+user_reposts: 6730382
