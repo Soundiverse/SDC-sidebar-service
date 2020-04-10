@@ -68,7 +68,6 @@ relatedPlaylistsGenerator();
 //   writer.pipe(fs.createWriteStream('db/postgres/writeGenresOpt.csv'));
 //   for (let i = 0; i < 100000; i++) {
 //     // let random = Math.floor((Math.random() * 100) / 12);
-//     // let fakerArray = [faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000}), faker.random.number({min:5, max:10000000})];
 //     writer.write({
 //       id: i,
 //       type: faker.commerce.color(),
