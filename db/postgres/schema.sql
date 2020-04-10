@@ -5,7 +5,7 @@ CREATE DATABASE Sidebar;
 USE Sidebar;
 
 CREATE TABLE tracks (
-  id int,
+  id SERIAL,
   title varchar,
   artist varchar,
   location varchar,
@@ -24,7 +24,7 @@ CREATE TABLE tracks (
 CREATE INDEX artist_index ON tracks USING hash (artist);
 
 CREATE TABLE playlists (
-  id int,
+  id SERIAL,
   name varchar,
   tracks int,
   likes int,
@@ -47,7 +47,7 @@ CREATE INDEX genre_index ON tracks USING hash (genre);
 --   followers int,
 --   likes int,
 --   PRIMARY KEY (id)
--- );
+-- ); removed when indexed playlists and tracks
 
 \COPY tracks (id,title,artist,location,followers,likes,reposts,plays,comments,genre,artist_image,song_image,user_reposts) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/postgres/writeSongsIndexed.csv' DELIMITER ',' CSV HEADER;
 \COPY playlists (id,name,tracks,likes,reposts,creator,genre,location,followers,playlist_image,user_image) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/postgres/writePlaylistsIndexed.csv' DELIMITER ',' CSV HEADER;
@@ -58,8 +58,6 @@ CREATE INDEX genre_index ON tracks USING hash (genre);
 ALTER TABLE playlists ADD FOREIGN KEY (tracks) REFERENCES tracks (id);
 -- ALTER TABLE genres ADD FOREIGN KEY (songs) REFERENCES tracks (id);
 
-select * from public.comments INNER JOIN public.users ON public.comments."user_id" = public.users.id where public.comments.song_id = 9298764;
-SELECT * from playlists INNER JOIN genres on tracks.genre FROM tracks.genre = genres.id where id = 6; 
-CREATE INDEX artist ON tracks USING hash (column);
+SELECT * from playlists INNER JOIN genres on tracks.genre FROM tracks.genre = genres.id where id = 6; CREATE INDEX artist ON tracks USING hash (column);
 -- CREATE INDEX <index name> ON <table name> USING HASH (<column name>);
-  const sonngID = req.params.songid;
+SELECT * from tracks WHERE artist LIKE '%${tracks.artist}%';

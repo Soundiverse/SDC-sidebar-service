@@ -12,3 +12,7 @@ config.js
 
 # license key and setup for new relic
 newrelic.js
+
+# remove old db and cassandra files from git repo
+db/cassandra
+db/original
