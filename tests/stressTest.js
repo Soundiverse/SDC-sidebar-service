@@ -1,49 +1,23 @@
 import http from 'k6/http';
-import { sleep } from 'k6';
+import { check, sleep } from 'k6';
 
 export let options = {
   stages: [
-    { duration: '2m', target: 100 }, // below normal load
-    { duration: '5m', target: 100 },
-    { duration: '2m', target: 200 }, // normal load
-    { duration: '5m', target: 200 },
-    { duration: '2m', target: 300 }, // around the breaking point
-    { duration: '5m', target: 300 },
-    { duration: '2m', target: 400 }, // beyond the breaking point
-    { duration: '5m', target: 400 },
-    { duration: '10m', target: 0 }, // scale down. Recovery stage.
+    { duration: '1s', target: 75 }, 
+    { duration: '5s', target: 125 },
+    { duration: '5s', target: 250 }, 
+    { duration: '10s', target: 500 }, 
+    { duration: '10s', target: 1000 }, 
+    { duration: '10s', target: 0 }, 
   ],
 };
 
 export default function() {
-  const BASE_URL = 'localhost:3400'; // make sure this is not production
 
-  let responses = http.batch([
-    [
-      'GET',
-      `${BASE_URL}/song`,
-      null,
-      { tags: { name: 'PublicCrocs' } },
-    ],
-    [
-      'GET',
-      `${BASE_URL}/song`,
-      null,
-      { tags: { name: 'PublicCrocs' } },
-    ],
-    [
-      'GET',
-      `${BASE_URL}/song`,
-      null,
-      { tags: { name: 'PublicCrocs' } },
-    ],
-    [
-      'GET',
-      `${BASE_URL}/song`,
-      null,
-      { tags: { name: 'PublicCrocs' } },
-    ],
-  ]);
-
+  let responses = http.get(`http://localhost:3400/song`);
+  check(responses, {
+    'status was 200': r => r.status == 200,
+    'transaction time OK': r => r.timings.duration < 200,
+  });
   sleep(1);
 }

@@ -27,7 +27,7 @@ class App extends React.Component {
   }
 
   getMainSong() {
-    return axios.get('/api/mainSong')
+    return axios.get('/song')
       .then(res => {
         console.log('RES DATA FROM GET ALL SONGS GET REQUEST FROM CLIENT SIDE ', res.data);
         this.setState({

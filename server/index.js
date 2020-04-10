@@ -16,12 +16,18 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/song', (req, res) => {
 // console.log(res.body);
-controller.getRelatedSongs(res.body, (err, response) => {
-  if (err) {
-    res.send(err);
-  }
-  res.send(response);
-});
+// controller.getAMainSong(res.body, (err, response) => {
+//   if (err) {
+//     res.send(err);
+//   }
+  controller.getRelatedSongs(res.body, (err, res) => {
+    if (err) {
+      res.send(err);
+    }
+    res.send(res);
+  })
+// });
+
 });
 
 // Create / POST - create a new item
