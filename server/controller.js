@@ -1,6 +1,7 @@
 // this will be the connection between postgres and server
 const config = require('../config.js');
 const {Pool, client} = require('pg');
+const faker = require('faker');
 
 const pool = new Pool({
   user: 'postgres',
@@ -11,8 +12,8 @@ const pool = new Pool({
 })
 
 const getAMainSong = (request, callback) => {
-    let random = Math.floor((Math.random() * 10000000) / 100);
-
+    // let random = Math.floor((Math.random() * 10000000) / 100);
+    let random = faker.random.number({min:5, max:10000000})
     pool.query(`SELECT * FROM tracks where id = ${random};`, (error, results) => {
         if (error) {
           console.log('err getting tracks', error);
@@ -25,7 +26,9 @@ const getAMainSong = (request, callback) => {
 const getRelatedSongs = (req, callback) => {
   let relatedSongs = [];
   let relatedPlaylists = [];
-  let id = req.id;
+  // let id = req.id;
+  // for stress test purposes, to generate a random id
+  let id = faker.random.number({min:5, max:10000000})
   // console.log(id);
   pool.query(`SELECT * FROM tracks where id = ${id};`, (err, results) => {
     if (err) {
