@@ -18,7 +18,7 @@ const getAMainSong = (request, callback) => {
           console.log('err getting tracks', error);
         }
         callback(null, JSON.parse(JSON.stringify(results.rows)));
-        pool.end();
+        // pool.end();
       });
 }
 
