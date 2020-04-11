@@ -1,5 +1,4 @@
 const newrelic = require('newrelic');
-
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -32,7 +31,7 @@ app.post('/song', function (req, res) {
 // Read / GET - read an item
 app.get('/song/:id', function (req, res) {
   let id = req.params;
-  // console.log(req.params);
+  // console.log('requested id: ', req.params);
   controller.getRelatedSongs(id, (err, response) => {
     if (err) {
       res.send(err);
