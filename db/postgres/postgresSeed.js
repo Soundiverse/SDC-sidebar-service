@@ -28,7 +28,7 @@ const songDataGenerator = () => {
       continue;
     }
   }
-  writer.end();
+  // writer.end();
   console.log('done with songs')
 }
 

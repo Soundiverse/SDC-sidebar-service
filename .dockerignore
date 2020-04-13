@@ -18,3 +18,7 @@ newrelic.js
 # remove old db and cassandra files from git repo
 db/cassandra
 db/original
+
+# remove to save space
+db/postgres/writeSongsIndexed.csv
+db/postgres/writePlaylistsIndexed.csv
