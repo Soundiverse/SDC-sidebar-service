@@ -1,18 +1,9 @@
 node_modules
 AWSCLIV2.pkg
 
-# these files are large and should be ignored, they can always be regenerated
-*.csv
-db/cassandra/writeSongs.csv
-db/cassandra/writeGenres.csv
-db/cassandra/writePlaylists.csv
-
 # ignore db password
 config.js
 
-# license key and setup for new relic
-newrelic.js
 
-# remove old db and cassandra files from git repo
-db/cassandra
-db/original
+#ignore seed files
+*.csv
