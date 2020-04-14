@@ -9,6 +9,7 @@
     "seed": "node ./db/seed.js",
     "seedCassandra": "node --max-old-space-size=16384 ./db/cassandra/cassandraSeed.js",
     "seedPostgres": "node --max-old-space-size=16384 ./db/postgres/postgresSeed.js",
+    "seedPostgres2": "node --max-old-space-size=16384 ./db/postgres/postgresSeed2.js",
     "test": "jest",
     "lint": "eslint"
   },

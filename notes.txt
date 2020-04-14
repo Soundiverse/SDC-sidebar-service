@@ -1,20 +1,3 @@
-to increase RAM and run the seed file, to create csv files for seeding
-node — max-old-space-size=8192 {insert-seeder-filname here}
-
-for running cassandra schema (which also has the seeding script for seeding the database)
-- cqlsh -u root < db/cassandra/cassandra.schema.sql
-
-
-for cassandra copying from csv 
-in cqlsh (cassandra query shell)
-songs:
-COPY Sidebar.songs (id, title, artist, location, followers, likes, reposts, plays, comments, genre, artist_image, song_image, user_reposts) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/cassandra/writeSongs.csv' with header=true and delimiter=',';
-playlists:
-COPY Sidebar.playlists (id, name, songs, likes, reposts, creator, genre, location, followers, playlist_image, user_image) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/cassandra/writePlaylists.csv' with header=true and delimiter=',';
-genres:
-COPY Sidebar.playlists (id, type, songs, followers, likes) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/cassandra/writeGenres.csv' with header=true and delimiter=',';
-
-
 postgres
 /Library/PostgreSQL/12/scripts/runpsql.sh; exit
 \l to list databases 

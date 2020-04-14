@@ -1,0 +1,36 @@
+const faker = require('faker');
+const csvWriter = require('csv-write-stream');
+const writer = csvWriter();
+const fs = require('fs');
+const genres = [ 'spanish', 'country', 'pop', 'hip-hop', 'r&b', 'latin', 'rap', 'classical', 'alternative', 'rock', 'punk', 'heavy metal', 'jazz', 'soul', 'metal']
+
+
+const relatedPlaylistsGenerator = function () {
+  writer.pipe(fs.createWriteStream('db/postgres/writePlaylistsIndexed.csv'));
+  for (let i = 0; i < 4000000; i++) {
+    let random = Math.floor((Math.random() * 100) / 12);
+    // songs below is the number of songs from tracks table that belong on this playlist (it is a random #)
+    writer.write({
+      id: i,
+      name: `'${faker.name.findName()}'`,
+      tracks: faker.random.number({min:3, max:25}),
+      likes: faker.random.number({min:5, max:10000}),
+      reposts: faker.random.number({min:5, max:10000}),
+      creator:  `'${faker.name.findName()}'`,
+      genre: genres[random],
+      location: `'${faker.address.city()}'`,
+      followers: faker.random.number({min:5, max:10000}),
+      playlist_image: `'${faker.image.image()}'`,
+      user_image: `'${faker.image.avatar()}'`
+    });
+    if (i === 2000000) {
+      console.log('halfway through related playlists!');
+      continue;
+    }
+  }
+  writer.end();
+  console.log('done with related playlists');
+};
+
+relatedPlaylistsGenerator();
+
