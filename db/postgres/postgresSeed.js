@@ -6,7 +6,7 @@ const genres = [ 'spanish', 'country', 'pop', 'hip-hop', 'r&b', 'latin', 'rap', 
 
 const songDataGenerator = () => {
   writer.pipe(fs.createWriteStream('db/postgres/writeSongsIndexed.csv'));
-  for (var i = 0; i < 10000000; i++) {
+  for (var i = 0; i < 1000000; i++) {
     let random = Math.floor((Math.random() * 100) / 15);
     writer.write({
       id: i,

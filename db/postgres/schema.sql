@@ -5,7 +5,7 @@ CREATE DATABASE Sidebar;
 USE Sidebar;
 
 CREATE TABLE tracks (
-  id SERIAL,
+  id int,
   title varchar,
   artist varchar,
   location varchar,
@@ -24,7 +24,7 @@ CREATE TABLE tracks (
 CREATE INDEX artist_index ON tracks USING hash (artist);
 
 CREATE TABLE playlists (
-  id SERIAL,
+  id int,
   name varchar,
   tracks int,
   likes int,

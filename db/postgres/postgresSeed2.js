@@ -7,7 +7,7 @@ const genres = [ 'spanish', 'country', 'pop', 'hip-hop', 'r&b', 'latin', 'rap', 
 
 const relatedPlaylistsGenerator = function () {
   writer.pipe(fs.createWriteStream('db/postgres/writePlaylistsIndexed.csv'));
-  for (let i = 0; i < 4000000; i++) {
+  for (let i = 0; i < 1000000; i++) {
     let random = Math.floor((Math.random() * 100) / 12);
     // songs below is the number of songs from tracks table that belong on this playlist (it is a random #)
     writer.write({
