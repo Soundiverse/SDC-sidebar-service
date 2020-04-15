@@ -50,7 +50,7 @@ CREATE INDEX genre_index ON tracks USING hash (genre);
 -- ); removed when indexed playlists and tracks
 
 \COPY tracks (id,title,artist,location,followers,likes,reposts,plays,comments,genre,artist_image,song_image,user_reposts) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/postgres/writeSongsIndexed.csv' DELIMITER ',' CSV HEADER;
-\COPY playlists (id,name,tracks,likes,reposts,creator,genre,location,followers,playlist_image,user_image) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/postgres/writePlaylistsIndexed.csv' DELIMITER ',' CSV HEADER;
+\COPY playlists (id,name,tracks,likes,reposts,creator,genre,location,followers,playlist_image,user_image) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC-sidebar-service/db/postgres/writePlaylistsIndexed.csv' DELIMITER ',' CSV HEADER;
 -- \COPY genres (id,type,songs,followers,likes) FROM '/Users/kelsyvaughn/Documents/Hack Reactor/secondHalf/SDC/SDC-sidebar-service/db/postgres/seedFiles/writeGenresOpt.csv' DELIMITER ',' CSV HEADER;
 \COPY tracks (id,title,artist,location,followers,likes,reposts,plays,comments,genre,artist_image,song_image,user_reposts) FROM '/home/ec2-user/SDC-sidebar-service/db/postgres/writeSongsIndexed.csv' DELIMITER ',' CSV HEADER;
 \COPY playlists (id,name,tracks,likes,reposts,creator,genre,location,followers,playlist_image,user_image) FROM '/home/ec2-user/SDC-sidebar-service/db/postgres/writePlaylistsIndexed.csv' DELIMITER ',' CSV HEADER;
