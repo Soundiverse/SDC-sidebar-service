@@ -4,7 +4,6 @@ const {Pool, client} = require('pg');
 const faker = require('faker');
 
 const pool = new Pool({
-  user: 'postgres',
   database: 'sidebar',
   password: 'Rowan',
   port: 5432,
