@@ -59,8 +59,8 @@ CREATE INDEX genre_index ON tracks USING hash (genre);
 ALTER TABLE playlists ADD FOREIGN KEY (tracks) REFERENCES tracks (id);
 -- ALTER TABLE genres ADD FOREIGN KEY (songs) REFERENCES tracks (id);
 
-SELECT * from playlists INNER JOIN genres on tracks.genre FROM tracks.genre = genres.id where id = 6; CREATE INDEX artist ON tracks USING hash (column);
+--SELECT * from playlists INNER JOIN genres on tracks.genre FROM tracks.genre = genres.id where id = 6; CREATE INDEX artist ON tracks USING hash (column);
 -- CREATE INDEX <index name> ON <table name> USING HASH (<column name>);
-SELECT * from tracks WHERE artist LIKE '%${tracks.artist}%';
+--SELECT * from tracks WHERE artist LIKE '%${tracks.artist}%';
 
-scp -i ~/Documents/Hack\ Reactor/secondHalf/this-one-now.pem ~/Documents/Hack\ Reactor/secondHalf/writeSongsIndexed.csv  ec2-user@ec2-54-183-195-165.us-west-1.compute.amazonaws.com:~/data/
+--scp -i ~/Documents/Hack\ Reactor/secondHalf/this-one-now.pem ~/Documents/Hack\ Reactor/secondHalf/writeSongsIndexed.csv  ec2-user@ec2-54-183-195-165.us-west-1.compute.amazonaws.com:~/data/

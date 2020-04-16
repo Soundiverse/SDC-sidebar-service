@@ -8,7 +8,7 @@ COPY . /src/app
 
 RUN npm install
 
-EXPOSE 3003
+EXPOSE 3400
 
 CMD [ "npm", "run", "server-dev"]
 

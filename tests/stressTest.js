@@ -14,7 +14,7 @@ export let options = {
 
 export default function() {
 // the controller is set to a random id so 1 will be replaced every request
-  let res = http.get(`http://localhost:3400/song/1`);
+  let res = http.get(`ec2-54-215-198-82.us-west-1.compute.amazonaws.com`);
   check(res, {
     'status was 200': r => r.status == 200,
     'transaction time OK': r => r.timings.duration < 2000,

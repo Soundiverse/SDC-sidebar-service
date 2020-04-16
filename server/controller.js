@@ -5,7 +5,7 @@ const faker = require('faker');
 
 const pool = new Pool({
   database: 'sidebar',
-  password: 'Rowan',
+  // password: config.password,
   port: 5432,
 })
 
@@ -43,7 +43,7 @@ const getRelatedSongs = (req, callback) => {
       /// need to change this array into it's objects, so it's not nested? or should this be done on the frontend when needed?
       relatedSongs.push(results.rows);
       // console.log('related song array part 2', relatedSongs);
-      pool.query(`SELECT * from tracks WHERE genre = '${songGenre}' LIMIT 3;`, (err, results) => {
+      pool.query(`SELECT * from playlists WHERE genre = '${songGenre}' LIMIT 3;`, (err, results) => {
         // console.log(results.rows);
         relatedPlaylists = results.rows;
         if (err) {
