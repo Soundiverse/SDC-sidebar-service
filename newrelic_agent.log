@@ -7109,3 +7109,299 @@
 {"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":97164,"time":"2020-04-16T02:20:41.943Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
 {"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":97164,"time":"2020-04-16T02:20:41.945Z","msg":"Agent state changed from connected to started."}
 {"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":97164,"time":"2020-04-16T02:20:42.951Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":11842,"time":"2020-04-16T18:49:21.448Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":11842,"time":"2020-04-16T18:49:21.633Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":11842,"time":"2020-04-16T18:49:21.777Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":11842,"time":"2020-04-16T18:49:21.777Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":11858,"time":"2020-04-16T18:49:23.414Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":11858,"time":"2020-04-16T18:49:23.541Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":11858,"time":"2020-04-16T18:49:23.678Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":11858,"time":"2020-04-16T18:49:23.678Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":11858,"time":"2020-04-16T18:49:26.909Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":11858,"time":"2020-04-16T18:49:26.909Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BW6cCq2kA_c3ACjr_yecFGtemKkUAAgBAAAnIQEAAC5SAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":11858,"time":"2020-04-16T18:49:26.909Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":11858,"time":"2020-04-16T18:49:26.911Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":11858,"time":"2020-04-16T18:49:26.913Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":11858,"time":"2020-04-16T18:49:27.916Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12637,"time":"2020-04-16T18:58:15.273Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12637,"time":"2020-04-16T18:58:15.457Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12637,"time":"2020-04-16T18:58:15.640Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12637,"time":"2020-04-16T18:58:15.640Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12637,"time":"2020-04-16T18:58:18.339Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12637,"time":"2020-04-16T18:58:18.339Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BW6h-Vr1AQ7bACjr_yecFGtemKswAAgBAAAnIQEAADFdAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12637,"time":"2020-04-16T18:58:18.339Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12637,"time":"2020-04-16T18:58:18.341Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12637,"time":"2020-04-16T18:58:18.343Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12637,"time":"2020-04-16T18:58:19.345Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12724,"time":"2020-04-16T18:58:53.116Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12724,"time":"2020-04-16T18:58:53.280Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12724,"time":"2020-04-16T18:58:53.488Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12724,"time":"2020-04-16T18:58:53.488Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12750,"time":"2020-04-16T18:58:55.503Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12750,"time":"2020-04-16T18:58:55.628Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12750,"time":"2020-04-16T18:58:55.768Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12750,"time":"2020-04-16T18:58:55.768Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12750,"time":"2020-04-16T18:58:58.107Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12750,"time":"2020-04-16T18:58:58.108Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BY1PnQOKbnAiACjr_yecFGtemKswAAgBAAAnIQEAADHOAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12750,"time":"2020-04-16T18:58:58.108Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12750,"time":"2020-04-16T18:58:58.109Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12750,"time":"2020-04-16T18:58:58.112Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12750,"time":"2020-04-16T18:58:59.117Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12843,"time":"2020-04-16T19:00:18.731Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12843,"time":"2020-04-16T19:00:18.864Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12843,"time":"2020-04-16T19:00:19.027Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12843,"time":"2020-04-16T19:00:19.027Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12866,"time":"2020-04-16T19:00:20.116Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12866,"time":"2020-04-16T19:00:20.243Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12866,"time":"2020-04-16T19:00:20.382Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12866,"time":"2020-04-16T19:00:20.382Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12905,"time":"2020-04-16T19:00:31.456Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12905,"time":"2020-04-16T19:00:31.588Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12905,"time":"2020-04-16T19:00:31.750Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12905,"time":"2020-04-16T19:00:31.750Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12905,"time":"2020-04-16T19:00:33.819Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12905,"time":"2020-04-16T19:00:33.819Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID Be-NJiP48DANACjr_yecFGtemKuoAAgBAAAnIQEAADJpAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12905,"time":"2020-04-16T19:00:33.819Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12905,"time":"2020-04-16T19:00:33.820Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12905,"time":"2020-04-16T19:00:33.822Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12905,"time":"2020-04-16T19:00:34.827Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12999,"time":"2020-04-16T19:01:40.439Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12999,"time":"2020-04-16T19:01:40.548Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12999,"time":"2020-04-16T19:01:40.681Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":12999,"time":"2020-04-16T19:01:40.682Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13020,"time":"2020-04-16T19:01:42.219Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13020,"time":"2020-04-16T19:01:42.343Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13020,"time":"2020-04-16T19:01:42.472Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13020,"time":"2020-04-16T19:01:42.472Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13020,"time":"2020-04-16T19:01:44.788Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13020,"time":"2020-04-16T19:01:44.788Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID Be-_FJGyvZG-ACjr_yecFGtemKvkAAgBAAAnIQEAADLcAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13020,"time":"2020-04-16T19:01:44.788Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13020,"time":"2020-04-16T19:01:44.790Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13020,"time":"2020-04-16T19:01:44.792Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13059,"time":"2020-04-16T19:02:05.889Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13059,"time":"2020-04-16T19:02:06.005Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13059,"time":"2020-04-16T19:02:06.146Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13059,"time":"2020-04-16T19:02:06.147Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13059,"time":"2020-04-16T19:02:08.506Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13059,"time":"2020-04-16T19:02:08.506Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BSmPhRGj-B-FACjr_yecFGtemKwgAAgBAAAnIQEAADMDAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13059,"time":"2020-04-16T19:02:08.506Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13059,"time":"2020-04-16T19:02:08.508Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13059,"time":"2020-04-16T19:02:08.509Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13085,"time":"2020-04-16T19:02:09.031Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13085,"time":"2020-04-16T19:02:09.139Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13085,"time":"2020-04-16T19:02:09.276Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13085,"time":"2020-04-16T19:02:09.277Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13085,"time":"2020-04-16T19:02:11.652Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13085,"time":"2020-04-16T19:02:11.652Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BWLRE_XJmMPgACjr_yecFGtemKwgAAgBAAAnIQEAADMdAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13085,"time":"2020-04-16T19:02:11.652Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13085,"time":"2020-04-16T19:02:11.653Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13085,"time":"2020-04-16T19:02:11.655Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13152,"time":"2020-04-16T19:03:09.179Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13152,"time":"2020-04-16T19:03:09.279Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13152,"time":"2020-04-16T19:03:09.433Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13152,"time":"2020-04-16T19:03:09.433Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13152,"time":"2020-04-16T19:03:11.753Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13152,"time":"2020-04-16T19:03:11.753Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BRJjToSvZPvDACjr_yecFGtemKxcAAgBAAAnIQEAADNgAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13152,"time":"2020-04-16T19:03:11.753Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13152,"time":"2020-04-16T19:03:11.755Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13152,"time":"2020-04-16T19:03:11.757Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13152,"time":"2020-04-16T19:03:12.761Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13490,"time":"2020-04-16T19:04:26.214Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13490,"time":"2020-04-16T19:04:26.310Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13490,"time":"2020-04-16T19:04:26.435Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13490,"time":"2020-04-16T19:04:26.435Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13490,"time":"2020-04-16T19:04:28.431Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13490,"time":"2020-04-16T19:04:28.431Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BRcMaAHO_a9rACjr_yecFGtemKyYAAgBAAAnIQEAADSyAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13490,"time":"2020-04-16T19:04:28.431Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13490,"time":"2020-04-16T19:04:28.434Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13490,"time":"2020-04-16T19:04:28.436Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13490,"time":"2020-04-16T19:04:29.437Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13556,"time":"2020-04-16T19:05:00.289Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13556,"time":"2020-04-16T19:05:00.397Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13556,"time":"2020-04-16T19:05:00.569Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13556,"time":"2020-04-16T19:05:00.569Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13556,"time":"2020-04-16T19:05:02.895Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13556,"time":"2020-04-16T19:05:02.895Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BRxOZuq0cf6wACjr_yecFGtemKzUAAgBAAAnIQEAADT0AgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13556,"time":"2020-04-16T19:05:02.895Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13556,"time":"2020-04-16T19:05:02.897Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13556,"time":"2020-04-16T19:05:02.898Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13556,"time":"2020-04-16T19:05:03.899Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13581,"time":"2020-04-16T19:05:06.847Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13581,"time":"2020-04-16T19:05:06.949Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13581,"time":"2020-04-16T19:05:07.072Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13581,"time":"2020-04-16T19:05:07.072Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13611,"time":"2020-04-16T19:05:11.582Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13611,"time":"2020-04-16T19:05:11.700Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13611,"time":"2020-04-16T19:05:11.820Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13611,"time":"2020-04-16T19:05:11.820Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13636,"time":"2020-04-16T19:05:16.360Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13636,"time":"2020-04-16T19:05:16.481Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13636,"time":"2020-04-16T19:05:16.620Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13636,"time":"2020-04-16T19:05:16.620Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13636,"time":"2020-04-16T19:05:18.913Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13636,"time":"2020-04-16T19:05:18.914Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BWvRXH29fklBACjr_yecFGtemKzUAAgBAAAnIQEAADVEAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13636,"time":"2020-04-16T19:05:18.914Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13636,"time":"2020-04-16T19:05:18.916Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13636,"time":"2020-04-16T19:05:18.919Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13636,"time":"2020-04-16T19:05:19.923Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13719,"time":"2020-04-16T19:06:26.332Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13719,"time":"2020-04-16T19:06:26.445Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13719,"time":"2020-04-16T19:06:26.602Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13719,"time":"2020-04-16T19:06:26.602Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13876,"time":"2020-04-16T19:08:28.905Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13876,"time":"2020-04-16T19:08:29.026Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13876,"time":"2020-04-16T19:08:29.154Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13876,"time":"2020-04-16T19:08:29.154Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13876,"time":"2020-04-16T19:08:30.989Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13876,"time":"2020-04-16T19:08:30.989Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BU49ryPUp2NuACjr_yecFGtemK2IAAgBAAAnIQEAADY0AgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13876,"time":"2020-04-16T19:08:30.989Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13876,"time":"2020-04-16T19:08:30.991Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13876,"time":"2020-04-16T19:08:30.992Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13876,"time":"2020-04-16T19:08:31.996Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13902,"time":"2020-04-16T19:08:38.864Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13902,"time":"2020-04-16T19:08:38.968Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13902,"time":"2020-04-16T19:08:39.090Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13902,"time":"2020-04-16T19:08:39.090Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13902,"time":"2020-04-16T19:08:40.966Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13902,"time":"2020-04-16T19:08:40.967Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BTKXsJDwzdRJACjr_yecFGtemK2IAAgBAAAnIQEAADZOAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13902,"time":"2020-04-16T19:08:40.967Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13902,"time":"2020-04-16T19:08:40.968Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13902,"time":"2020-04-16T19:08:40.970Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13960,"time":"2020-04-16T19:08:51.140Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13960,"time":"2020-04-16T19:08:51.263Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13960,"time":"2020-04-16T19:08:51.389Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13960,"time":"2020-04-16T19:08:51.389Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13960,"time":"2020-04-16T19:08:53.684Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13960,"time":"2020-04-16T19:08:53.684Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID Bc8GWUqRnnWGACjr_yecFGtemK2IAAgBAAAnIQEAADaIAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13960,"time":"2020-04-16T19:08:53.684Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13960,"time":"2020-04-16T19:08:53.685Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13960,"time":"2020-04-16T19:08:53.687Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13960,"time":"2020-04-16T19:08:54.689Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13984,"time":"2020-04-16T19:08:56.267Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13984,"time":"2020-04-16T19:08:56.391Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13984,"time":"2020-04-16T19:08:56.513Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13984,"time":"2020-04-16T19:08:56.513Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13984,"time":"2020-04-16T19:08:59.580Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13984,"time":"2020-04-16T19:08:59.580Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID Bfj8mtyU2AzcACjr_yecFGtemK2IAAgBAAAnIQEAADagAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13984,"time":"2020-04-16T19:08:59.581Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13984,"time":"2020-04-16T19:08:59.582Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13984,"time":"2020-04-16T19:08:59.584Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":13984,"time":"2020-04-16T19:09:00.585Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14010,"time":"2020-04-16T19:09:05.344Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14010,"time":"2020-04-16T19:09:05.467Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14010,"time":"2020-04-16T19:09:05.609Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14010,"time":"2020-04-16T19:09:05.610Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14010,"time":"2020-04-16T19:09:07.871Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14010,"time":"2020-04-16T19:09:07.871Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BRk8I_zHO2dTACjr_yecFGtemK3EAAgBAAAnIQEAADa6AgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14010,"time":"2020-04-16T19:09:07.871Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14010,"time":"2020-04-16T19:09:07.873Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14010,"time":"2020-04-16T19:09:07.876Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14010,"time":"2020-04-16T19:09:08.876Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14045,"time":"2020-04-16T19:09:12.367Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14045,"time":"2020-04-16T19:09:12.482Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14045,"time":"2020-04-16T19:09:12.615Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14045,"time":"2020-04-16T19:09:12.615Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14045,"time":"2020-04-16T19:09:14.976Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14045,"time":"2020-04-16T19:09:14.976Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BQc-1-C9oKiAACjr_yecFGtemK3EAAgBAAAnIQEAADbdAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14045,"time":"2020-04-16T19:09:14.976Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14045,"time":"2020-04-16T19:09:14.978Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14045,"time":"2020-04-16T19:09:14.980Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14045,"time":"2020-04-16T19:09:15.980Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14087,"time":"2020-04-16T19:09:36.397Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14087,"time":"2020-04-16T19:09:36.515Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14087,"time":"2020-04-16T19:09:36.663Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14087,"time":"2020-04-16T19:09:36.663Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14087,"time":"2020-04-16T19:09:38.954Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14087,"time":"2020-04-16T19:09:38.955Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BTu-Ijf7x_jDACjr_yecFGtemK3EAAgBAAAnIQEAADcHAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14087,"time":"2020-04-16T19:09:38.955Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14087,"time":"2020-04-16T19:09:38.957Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14087,"time":"2020-04-16T19:09:38.959Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14087,"time":"2020-04-16T19:09:39.960Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14245,"time":"2020-04-16T19:12:18.287Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14245,"time":"2020-04-16T19:12:18.385Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14245,"time":"2020-04-16T19:12:18.519Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14245,"time":"2020-04-16T19:12:18.519Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14245,"time":"2020-04-16T19:12:20.408Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14245,"time":"2020-04-16T19:12:20.409Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BaSS4TLpLvubACjr_yecFGtemK54AAgBAAAnIQEAADelAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14245,"time":"2020-04-16T19:12:20.409Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14245,"time":"2020-04-16T19:12:20.411Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14245,"time":"2020-04-16T19:12:20.414Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14245,"time":"2020-04-16T19:12:21.416Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14273,"time":"2020-04-16T19:12:22.602Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14273,"time":"2020-04-16T19:12:22.729Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14273,"time":"2020-04-16T19:12:22.872Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14273,"time":"2020-04-16T19:12:22.872Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14273,"time":"2020-04-16T19:12:24.839Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14273,"time":"2020-04-16T19:12:24.839Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BWCYH6aRz1YnACjr_yecFGtemK54AAgBAAAnIQEAADfBAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14273,"time":"2020-04-16T19:12:24.839Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14273,"time":"2020-04-16T19:12:24.840Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14273,"time":"2020-04-16T19:12:24.842Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14273,"time":"2020-04-16T19:12:25.842Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14394,"time":"2020-04-16T19:14:44.598Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14394,"time":"2020-04-16T19:14:44.707Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14394,"time":"2020-04-16T19:14:44.845Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14394,"time":"2020-04-16T19:14:44.845Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14394,"time":"2020-04-16T19:14:47.239Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14394,"time":"2020-04-16T19:14:47.239Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BTXnZ_C2h0nCACjr_yecFGtemK7wAAgBAAAnIQEAADg6AgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14394,"time":"2020-04-16T19:14:47.239Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14394,"time":"2020-04-16T19:14:47.241Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14394,"time":"2020-04-16T19:14:47.244Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14394,"time":"2020-04-16T19:14:48.247Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14472,"time":"2020-04-16T19:15:33.781Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14472,"time":"2020-04-16T19:15:33.887Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14472,"time":"2020-04-16T19:15:34.041Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14472,"time":"2020-04-16T19:15:34.041Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14486,"time":"2020-04-16T19:15:34.883Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14486,"time":"2020-04-16T19:15:35.007Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14486,"time":"2020-04-16T19:15:35.138Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14486,"time":"2020-04-16T19:15:35.139Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14486,"time":"2020-04-16T19:15:37.523Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14486,"time":"2020-04-16T19:15:37.523Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BTvmNSmUUWmaACjr_yecFGtemK8sAAgBAAAnIQEAADiWAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14486,"time":"2020-04-16T19:15:37.523Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14486,"time":"2020-04-16T19:15:37.525Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14486,"time":"2020-04-16T19:15:37.528Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14486,"time":"2020-04-16T19:15:38.528Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14509,"time":"2020-04-16T19:15:39.911Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14509,"time":"2020-04-16T19:15:40.029Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14509,"time":"2020-04-16T19:15:40.151Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14509,"time":"2020-04-16T19:15:40.151Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14509,"time":"2020-04-16T19:15:43.557Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14509,"time":"2020-04-16T19:15:43.557Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BeSeZBSzOb79ACjr_yecFGtemK8sAAgBAAAnIQEAADitAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14509,"time":"2020-04-16T19:15:43.557Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14509,"time":"2020-04-16T19:15:43.559Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14509,"time":"2020-04-16T19:15:43.562Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14509,"time":"2020-04-16T19:15:44.563Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14565,"time":"2020-04-16T19:15:52.459Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14565,"time":"2020-04-16T19:15:52.583Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14565,"time":"2020-04-16T19:15:52.717Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14565,"time":"2020-04-16T19:15:52.717Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14581,"time":"2020-04-16T19:15:54.950Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14581,"time":"2020-04-16T19:15:55.050Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14581,"time":"2020-04-16T19:15:55.177Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14581,"time":"2020-04-16T19:15:55.177Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14581,"time":"2020-04-16T19:15:57.108Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14581,"time":"2020-04-16T19:15:57.109Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID BfrYLq7vedQ-ACjr_yecFGtemK8sAAgBAAAnIQEAADj1AgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14581,"time":"2020-04-16T19:15:57.109Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14581,"time":"2020-04-16T19:15:57.110Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14581,"time":"2020-04-16T19:15:57.112Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14581,"time":"2020-04-16T19:15:58.117Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14637,"time":"2020-04-16T19:16:21.794Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14637,"time":"2020-04-16T19:16:21.914Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14637,"time":"2020-04-16T19:16:22.062Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14637,"time":"2020-04-16T19:16:22.062Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14637,"time":"2020-04-16T19:16:24.361Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14637,"time":"2020-04-16T19:16:24.362Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID Bc_yfhrMjh35ACjr_yecFGtemK9oAAgBAAAnIQEAADktAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14637,"time":"2020-04-16T19:16:24.362Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14637,"time":"2020-04-16T19:16:24.364Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14637,"time":"2020-04-16T19:16:24.367Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14637,"time":"2020-04-16T19:16:25.367Z","msg":"Starting initial 1000ms harvest."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14666,"time":"2020-04-16T19:16:30.332Z","msg":"Using New Relic for Node.js. Agent version: 6.5.0; Node version: v10.15.3."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14666,"time":"2020-04-16T19:16:30.454Z","msg":"Agent state changed from stopped to starting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14666,"time":"2020-04-16T19:16:30.592Z","msg":"Starting New Relic for Node.js connection process."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14666,"time":"2020-04-16T19:16:30.592Z","msg":"Agent state changed from starting to connecting."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14666,"time":"2020-04-16T19:16:33.300Z","msg":"Agent state changed from connecting to connected."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14666,"time":"2020-04-16T19:16:33.300Z","msg":"Connected to collector-009.newrelic.com:443 with agent run ID Bf9i9I7RApRRACjr_yecFGtemK9oAAgBAAAnIQEAADlKAgQnnBRmAwAFNi41LjAACktlbHN5cy1NQlAADk15IFNpZGViYXIgQXBw.","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14666,"time":"2020-04-16T19:16:33.300Z","msg":"Reporting to: https://rpm.newrelic.com/accounts/2681855/applications/664540262","component":"collector_api"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14666,"time":"2020-04-16T19:16:33.302Z","msg":"Valid event_harvest_config received. Updating harvest cycles. {\"report_period_ms\":5000,\"harvest_limits\":{\"error_event_data\":8,\"custom_event_data\":83,\"analytic_event_data\":833}}"}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14666,"time":"2020-04-16T19:16:33.304Z","msg":"Agent state changed from connected to started."}
+{"v":0,"level":30,"name":"newrelic","hostname":"Kelsys-MBP","pid":14666,"time":"2020-04-16T19:16:34.305Z","msg":"Starting initial 1000ms harvest."}

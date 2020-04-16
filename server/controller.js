@@ -6,6 +6,7 @@ const faker = require('faker');
 const pool = new Pool({
   database: 'sidebar',
   // password: config.password,
+  user: 'postgres',
   port: 5432,
 })
 
